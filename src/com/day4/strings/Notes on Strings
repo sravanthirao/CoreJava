@@ -1,0 +1,16 @@
+objects of String are immutable.
+objects of string builder and string buffer are mutable.
+String Buffer and String Builder are similar,but string builder is faster.
+String builder is preferred over string buffer for single threaded program.
+String buffer is preferred is thread safety is needed.
+
+                      string                           string buffer              string builder
+                      ----------------------------------------------------------------------------
+Storage area    :      constant string pool               heap                       heap  
+Modifiable      :      No(immutable)                      Yes(mutable)               Yes(mutable)
+Thread-safe     :      Yes                                Yes                        No
+Performance     :      Fast                               Very slow                  Fast
+
+
+Heap memory is used to store objects in Java.(dynamic memory)
+stack memory is used to store  local variables and function calls.(static memory)
