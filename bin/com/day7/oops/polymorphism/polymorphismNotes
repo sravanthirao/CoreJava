@@ -1,0 +1,16 @@
+Polymorphism: 
+When one task is performed in different ways i.e. known as polymorphism.
+In Java we use method overloading and method overriding to achieve polymorphism.
+
+Types:
+1.compile time polymorphism(or)static polymorphism(or)Method overloading.
+2.Run time polymorphism(or)dynamic polymorphism(or)Method overriding.
+
+   Method overloading                                                  Method overriding
+----------------------------------------------------------------------------------------------------------------------
+1.occurs within the same class.                                       1.occurs with 2 classes (super &sub).
+2.Parameters must be different.                                       2.Parameters must be same.
+3.return type may or maynot be same.                                  3.return type must be same.
+                                   4.method name should be same in both
+method overloading:same method name and same signature.
+method overriding: same method name and different signature.

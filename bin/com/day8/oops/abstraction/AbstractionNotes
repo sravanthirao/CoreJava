@@ -1,0 +1,28 @@
+Hiding internal details and showing functionality is known as Abstraction.
+In java, we use abstract class(0 to 100%) and interface(100%)to achieve abstraction.
+
+Abstract class:
+A class that is declared as abstract is known as abstract class. It needs to be extended and its method implemented. It cannot be instantiated.
+abstract class A{}
+
+Abstract method:
+A method that is declared as abstract and does not have implementation.
+abstract void status();   // no body and abstract
+
+
+Interface:
+class implements an interface but one interface extends other interface
+
+   Abstract class                                                                           Interface
+-------------------------------------------------------------------------------------------------------------------
+1.Abstract class can have abstract and non-abstract methods.                 1.Interface can have only abstract methods
+2.Doesnot support multiple inheritance                                       2.Supports multiple inheritance.
+3.Abstract class can have                                                    3. Only static and final variables.
+static,nonstatic,final nonfinal variables.
+4. Can provide implementation of interface                                   4.Cannot provide implementation of abstract class
+5.abstract keyword is used to declare                                        5.interface keyword is used.
+6.example:                                                                   6.
+public abstract class A{                                                       public interface A{
+public abstract void draw();                                                   void draw();
+}                                                                              }
+
