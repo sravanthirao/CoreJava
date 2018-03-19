@@ -1,0 +1,114 @@
+Exception handling is one of the most important feature of java programming that allows us to handle the 
+runtime errors caused by exceptions. 
+
+In java, exception is an event that disrupts the normal flow of the program.
+If an exception occurs, which has not been handled by programmer then program execution gets terminated 
+and a system generated error message is shown to the user.
+This message is not user friendly so a user will not be able to understand what went wrong. 
+In order to let them know the reason in simple language, we handle exceptions. 
+
+
+
+Advantage of exception handling:
+----------------------------------------------------------------------------------------------------------------------
+Exception handling ensures that the flow of the program doesn’t break when an exception occurs. 
+For example, if a program has bunch of statements and an exception occurs mid way after executing certain statements
+then the statements after the exception will not execute and the program will terminate abruptly.
+By handling we make sure that all the statements execute and the flow of program doesn’t break.
+
+
+
+Difference between error and exception
+---------------------------------------------------------------------------------------------------------------------
+Errors indicate that something severe enough has gone wrong, the application should crash rather than try to handle 
+the error.
+
+Exceptions are events that occurs in the code. A programmer can handle such conditions and take necessary corrective
+actions. Few examples:
+NullPointerException – When you try to use a reference that points to null.
+ArithmeticException – When bad data is provided by user, for example, when you try to divide a number by zero this 
+exception occurs because dividing a number by zero is undefined.
+ArrayIndexOutOfBoundsException – When you try to access the elements of an array out of its bounds, 
+for example array size is 5 (which means it has five elements) and you are trying to access the 10th element.
+
+
+
+
+Checked exceptions:
+-------------------------------------------------------------------------------------------------------------------
+All exceptions other than Runtime Exceptions are known as Checked exceptions as the compiler checks
+them during compilation to see whether the programmer has handled them or not. 
+If these exceptions are not handled/declared in the program, you will get compilation error.
+For example, SQLException, IOException, ClassNotFoundException etc.
+
+
+
+Unchecked Exceptions:
+---------------------------------------------------------------------------------------------------------------------
+Runtime Exceptions are also known as Unchecked Exceptions.
+These exceptions are not checked at compile-time so compiler does not check whether the programmer has handled them
+or not but it’s the responsibility of the programmer to handle these exceptions and provide a safe exit. 
+For example, ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException etc.
+
+
+
+Few Important points regarding finally block:
+----------------------------------------------------------------------------------------------------------------------
+1. A finally block must be associated with a try block, you cannot use finally without a try block.
+ You should place those statements in this block that must be executed always.
+
+2. Finally block is optional, as we have seen in previous tutorials that a try-catch block is sufficient for exception handling,
+ however if you place a finally block then it will always run after the execution of try block.
+
+3. In normal case when there is no exception in try block then the finally block is executed after try block.
+ However if an exception occurs then the catch block is executed before finally block.
+
+4. An exception in the finally block, behaves exactly like any other exception.
+
+5. The statements present in the finally block execute even if the try block contains control transfer statements 
+like return, break or continue.
+
+
+Flow of control in try/catch/finally blocks:
+-------------------------------------------------------------------------------------------------------------------
+If exception occurs in try block’s body then control immediately transferred(skipping rest of the 
+statements in try block) to the catch block.
+Once catch block finished execution then finally block and after that rest of the program.
+
+If there is no exception occurred in the code which is present in try block then first, 
+the try block gets executed completely and then control gets transferred to finally block (skipping catch blocks).
+
+If a return statement is encountered either in try or catch block. In this case finally block runs. 
+Control first jumps to finally and then it returned back to return statement.
+
+
+
+	Throw                                                                                  Throws
+-------------------------------------------------------------------------------------------------------------------
+1.Used to explicitly throw an exception                                     1.Used to declare an exception
+2.Throw is followed by an instance                                          2.Throws is followed by class
+3.Throw is used within the method.                                          3.Throws is used with method signature
+4.we cannot throw multiple exceptions                                       4.we can declare multiple exceptions.
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
