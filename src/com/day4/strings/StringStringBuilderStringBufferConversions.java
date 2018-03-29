@@ -13,7 +13,7 @@ public class StringStringBuilderStringBufferConversions {
 		// String to string builder
 		StringBuilder sb1 = new StringBuilder(str);
 		System.out.println(sb1);
-		// String to string builder
+		// String to string buffer
 		StringBuffer sb2 = new StringBuffer(str);
 		System.out.println(sb2);
 

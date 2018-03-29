@@ -1,0 +1,4 @@
+HashMap doesn’t maintain any order.
+TreeMap sort the entries in ascending order of keys.
+LinkedHashMap maintains the insertion order.
+Hashtable is similar to HashMap except it is synchronized.

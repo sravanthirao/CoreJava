@@ -7,6 +7,6 @@ public class ArrayExample2 {
 		int a[]= {1,2,3,4};
 		//printing an array
 		for(int i :a)
-			System.out.println(+i);
+			System.out.println(i);
 	}
 }
